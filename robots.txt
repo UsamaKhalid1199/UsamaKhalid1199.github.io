@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://usamakhalid1199.github.io/sitemap.xml

@@ -1,47 +1,328 @@
-<!doctype html>
-<html lang="en-GB">
+<!DOCTYPE html>
+<html lang="en-GB" data-play-state="listing">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bleedoku – Colour Puzzle</title>
-<meta name="description" content="Mix colours, make BOOMs and bring a grey village back to life. A cosy colour puzzle for Android.">
-<link rel="icon" href="bleedoku/icon.png">
-<style>
-  :root { --ink:#2b2450; --pink:#d63f8c; --violet:#7752de; }
-  * { box-sizing: border-box; }
-  body { margin:0; font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink);
-         background:linear-gradient(160deg,#f3ecff 0%,#ffe9f4 55%,#e6f7fb 100%); min-height:100vh; }
-  main { max-width:880px; margin:0 auto; padding:32px 20px 48px; text-align:center; }
-  .hero { width:100%; border-radius:24px; box-shadow:0 16px 40px rgba(80,40,140,.25); }
-  .logo { width:min(420px,80%); margin:28px auto 8px; display:block; }
-  h1 { font-size:1.6rem; margin:8px 0 6px; }
-  p.lead { font-size:1.1rem; max-width:560px; margin:0 auto 24px; line-height:1.5; }
-  .btn { display:inline-block; background:var(--pink); color:#fff; text-decoration:none; font-weight:700;
-         padding:14px 26px; border-radius:16px; box-shadow:0 6px 0 #a42d6a; }
-  .soon { opacity:.85; font-size:.95rem; margin-top:10px; }
-  ul { list-style:none; padding:0; display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:12px; margin:32px 0; }
-  li { background:#fff; border-radius:16px; padding:16px; box-shadow:0 4px 14px rgba(80,40,140,.1); }
-  footer { font-size:.9rem; margin-top:32px; }
-  footer a { color:var(--violet); }
-</style>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-SNYcxhEqjTRPeXpWa45JNihxbmgvJIcl4j/TGmqzuy4='; style-src 'self'; img-src 'self'; font-src 'self'; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="description" content="Mix colours, make BOOMs and restore Chromavale. Discover the Android colour puzzle from Game Studio 05.">
+<link rel="canonical" href="https://usamakhalid1199.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bleedoku: Colour Puzzle">
+<meta property="og:description" content="Mix colours, make BOOMs and restore Chromavale. Discover the Android colour puzzle from Game Studio 05.">
+<meta property="og:url" content="https://usamakhalid1199.github.io/">
+<meta property="og:image" content="https://usamakhalid1199.github.io/assets/img/social.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Bleedoku logo beside a colourful game board in a painted village">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bleedoku: Colour Puzzle">
+<meta name="twitter:description" content="Mix colours, make BOOMs and restore Chromavale. Discover the Android colour puzzle from Game Studio 05.">
+<meta name="twitter:image" content="https://usamakhalid1199.github.io/assets/img/social.jpg">
+<meta name="theme-color" content="#fcfaff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#171322" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/assets/img/icon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/img/icon-180.png">
+<link rel="preload" as="font" href="/assets/fonts/nunito-latin.woff2" type="font/woff2" crossorigin>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bleedoku: Colour Puzzle | Game Studio 05</title>
+<link rel="stylesheet" href="assets/css/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"Bleedoku: Colour Puzzle","operatingSystem":"ANDROID","applicationCategory":"GameApplication","inLanguage":"en","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"Game Studio 05"},"url":"https://usamakhalid1199.github.io/","contentRating":"13+"}</script>
+<script src="assets/js/site.js" defer>
+</script>
 </head>
 <body>
-<main>
-  <img class="hero" src="bleedoku/feature.png" alt="Bleedoku – three jelly friends in a splash of colour">
-  <img class="logo" src="bleedoku/logo.png" alt="Bleedoku">
-  <h1>Mix colours. Bring the village home.</h1>
-  <p class="lead">A cosy colour puzzle with a story. Drop blue, pink and yellow, make black cores go BOOM, and rescue 20 friends across 100 hand-tuned levels.</p>
-  <a class="btn" href="#">Coming soon to Google Play</a>
-  <p class="soon">Free to play · Android</p>
-  <ul>
-    <li><strong>100 levels</strong><br>Six painted chapters</li>
-    <li><strong>Rescue 20 friends</strong><br>A story in every chapter</li>
-    <li><strong>Calm by design</strong><br>No ads mid-level, ever</li>
-  </ul>
-  <footer>
-    <a href="bleedoku/privacy.html">Privacy policy</a> · <a href="mailto:usamagames05@gmail.com">usamagames05@gmail.com</a><br>
-    © 2026 Game Studio
-  </footer>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<a class="brand" href="/">
+<picture>
+<source type="image/avif" srcset="assets/img/logo-160.avif 160w, assets/img/logo-320.avif 320w" sizes="160px">
+<source type="image/webp" srcset="assets/img/logo-160.webp 160w, assets/img/logo-320.webp 320w" sizes="160px">
+<img src="assets/img/logo-160.png" width="1024" height="576" alt="Bleedoku"  decoding="async">
+</picture>
+</a>
+<nav aria-label="Main">
+<a href="#play">The game</a>
+<a href="#world">The world</a>
+<a href="#help">Contact</a>
+</nav>
+<a class="button compact" href="https://play.google.com/store/apps/details?id=com.bleedoku.game&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dlanding" rel="noopener noreferrer">View on Google Play <span aria-hidden="true">&#8599;</span>
+</a>
+</header>
+<main id="main">
+<section class="hero wrap">
+<div>
+<p class="eyebrow">A COLOUR-MIXING PUZZLE FROM GAME STUDIO 05</p>
+<h1>A little colour.<br>A world to <em>restore.</em>
+</h1>
+<p class="lead">Mix colours, set off BOOMs and bring Chromavale back to life in a calm Android puzzle.</p>
+<div class="actions">
+<a class="button" href="https://play.google.com/store/apps/details?id=com.bleedoku.game&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dlanding" rel="noopener noreferrer">View on Google Play <span aria-hidden="true">&#8599;</span>
+</a>
+<a class="watch" href="#trailer">
+<span aria-hidden="true">&#9654;</span> Watch the trailer</a>
+</div>
+<p class="facts">Android <span>&middot;</span> Free with ads <span>&middot;</span> No in-app purchases</p>
+</div>
+<figure class="hero-art">
+<picture>
+<source type="image/avif" srcset="assets/img/garden-480.avif 480w, assets/img/garden-768.avif 768w, assets/img/garden-1200.avif 1200w" sizes="(max-width: 600px) calc(100vw - 32px), (max-width: 1000px) 45vw, 560px">
+<source type="image/webp" srcset="assets/img/garden-480.webp 480w, assets/img/garden-768.webp 768w, assets/img/garden-1200.webp 1200w" sizes="(max-width: 600px) calc(100vw - 32px), (max-width: 1000px) 45vw, 560px">
+<img src="assets/img/garden-768.jpg" width="1536" height="1024" alt="A miniature pigment garden with colourful blocks and a teal creature" fetchpriority="high" decoding="async">
+</picture>
+<figcaption>Three colours. A world of possibilities.</figcaption>
+</figure>
+</section>
+<div class="numbers wrap">
+<div>
+<strong>100</strong>
+<span>puzzles to explore</span>
+</div>
+<div>
+<strong>6</strong>
+<span>painted chapters</span>
+</div>
+<div>
+<strong>20</strong>
+<span>friends to rescue</span>
+</div>
+<p>One drop at a time.<br>At your own pace.</p>
+</div>
+<section class="section wrap" id="trailer">
+<div class="heading">
+<div>
+<p class="eyebrow">A GLIMPSE INSIDE</p>
+<h2>Small drops.<br>Satisfying moments.</h2>
+</div>
+<p>That perfect mix. A chain reaction.<br>One more friend finding their way home.</p>
+</div>
+<figure class="video">
+<details class="video-shell"><summary><picture><source type="image/avif" srcset="assets/img/trailer-poster-480.avif 480w, assets/img/trailer-poster-768.avif 768w, assets/img/trailer-poster-1200.avif 1200w" sizes="(max-width: 600px) calc(100vw - 32px), 90vw"><source type="image/webp" srcset="assets/img/trailer-poster-480.webp 480w, assets/img/trailer-poster-768.webp 768w, assets/img/trailer-poster-1200.webp 1200w" sizes="(max-width: 600px) calc(100vw - 32px), 90vw"><img src="assets/img/trailer-poster-768.jpg" width="1280" height="720" loading="lazy" alt="Bleedoku's colourful creatures and title artwork"></picture><span class="video-open">Play trailer</span><span class="video-close">Close trailer</span></summary><video controls playsinline preload="none" poster="assets/img/trailer-poster-768.webp" aria-label="Bleedoku gameplay trailer" aria-describedby="trailer-description">
+<source src="assets/video/trailer.mp4" type="video/mp4">
+<track kind="captions" src="assets/video/trailer-en.vtt" srclang="en" label="English">
+</video></details>
+<figcaption>The world of Bleedoku <span>Gameplay trailer &middot; Sound is your choice</span>
+</figcaption>
+</figure>
+<details class="transcript">
+<summary>Read the trailer description</summary>
+<p id="trailer-description">Game music accompanies the trailer. On-screen text introduces a cosy colour puzzle, colour mixing, combos, four-in-a-row PRISM blasts and 100 levels with glass, stone and ice. A rescue brings Sol home; a collection shows the friends in the village. The closing card reads Bleedoku, Free on Google Play.</p>
+</details>
+</section>
+<section class="section wrap split" id="play">
+<div>
+<p class="eyebrow">SIMPLE TO START. MORE TO DISCOVER.</p>
+<h2>Find your<br>favourite mix.</h2>
+<p class="lead">Drop blue, pink and yellow into the chamber. Touching colours mix. All three together make a black core.</p>
+<div class="recipe" role="group" aria-label="Blue plus pink plus yellow makes a black core">
+<img src="assets/img/ink-1.svg" width="55" height="55" alt="Blue">
+<b>+</b>
+<img src="assets/img/ink-2.svg" width="55" height="55" alt="Pink">
+<b>+</b>
+<img src="assets/img/ink-4.svg" width="55" height="55" alt="Yellow">
+<b>=</b>
+<img src="assets/img/ink-7.svg" width="55" height="55" alt="Black core">
+</div>
+<button class="mix-button" type="button" hidden>See the colours mix</button>
+<div class="rule">
+<b>Two cores. One BOOM.</b>
+<p>Bring two black cores together to clear space and start a chain reaction.</p>
+</div>
+<div class="rule">
+<b>Four in a line. A PRISM.</b>
+<p>Line up four of a colour for a blast that opens up the board.</p>
+</div>
+</div>
+<figure class="phone-stage">
+<picture>
+<source type="image/avif" srcset="assets/img/gameplay-320.avif 320w, assets/img/gameplay-480.avif 480w, assets/img/gameplay-720.avif 720w" sizes="240px">
+<source type="image/webp" srcset="assets/img/gameplay-320.webp 320w, assets/img/gameplay-480.webp 480w, assets/img/gameplay-720.webp 720w" sizes="240px">
+<img src="assets/img/gameplay-480.png" width="1080" height="2400" alt="Bleedoku game board with coloured blocks" loading="lazy" decoding="async">
+</picture>
+<figcaption>Actual gameplay</figcaption>
+</figure>
+</section>
+<section class="story" id="world">
+<div class="wrap split">
+<figure class="village">
+<picture>
+<source type="image/avif" srcset="assets/img/village-480.avif 480w, assets/img/village-768.avif 768w, assets/img/village-1200.avif 1200w" sizes="(max-width: 600px) calc(100vw - 32px), (max-width: 1000px) 45vw, 560px">
+<source type="image/webp" srcset="assets/img/village-480.webp 480w, assets/img/village-768.webp 768w, assets/img/village-1200.webp 1200w" sizes="(max-width: 600px) calc(100vw - 32px), (max-width: 1000px) 45vw, 560px">
+<img src="assets/img/village-768.jpg" width="864" height="1296" alt="Chromavale's cottages and gardens" loading="lazy" decoding="async">
+</picture>
+</figure>
+<div>
+<p class="eyebrow">WELCOME TO CHROMAVALE</p>
+<h2>A puzzle with<br>a place in its heart.</h2>
+<p class="lead">The Grey has drained the colour from the village. Help Tinta, the last apprentice ink-maker, rescue her friends and bring it back.</p>
+<div class="characters">
+<figure>
+<picture>
+<source type="image/avif" srcset="assets/img/tinta-192.avif 192w, assets/img/tinta-384.avif 384w" sizes="90px">
+<source type="image/webp" srcset="assets/img/tinta-192.webp 192w, assets/img/tinta-384.webp 384w" sizes="90px">
+<img src="assets/img/tinta-384.jpg" width="384" height="384" alt="Tinta" loading="lazy" decoding="async">
+</picture>
+<figcaption>Tinta</figcaption>
+</figure>
+<figure>
+<picture>
+<source type="image/avif" srcset="assets/img/mochi-192.avif 192w, assets/img/mochi-384.avif 384w" sizes="90px">
+<source type="image/webp" srcset="assets/img/mochi-192.webp 192w, assets/img/mochi-384.webp 384w" sizes="90px">
+<img src="assets/img/mochi-384.jpg" width="384" height="384" alt="Mochi" loading="lazy" decoding="async">
+</picture>
+<figcaption>Mochi</figcaption>
+</figure>
+<figure>
+<picture>
+<source type="image/avif" srcset="assets/img/pip-192.avif 192w, assets/img/pip-384.avif 384w" sizes="90px">
+<source type="image/webp" srcset="assets/img/pip-192.webp 192w, assets/img/pip-384.webp 384w" sizes="90px">
+<img src="assets/img/pip-384.jpg" width="384" height="384" alt="Pip" loading="lazy" decoding="async">
+</picture>
+<figcaption>Pip</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section class="section wrap">
+<p class="eyebrow">TAKE THE SCENIC ROUTE</p>
+<h2>Six chapters. More colour<br>around every corner.</h2>
+<div class="chapters" role="region" aria-label="Six painted chapters" tabindex="0">
+<article>
+<picture>
+<source type="image/avif" srcset="assets/img/region1-240.avif 240w, assets/img/region1-400.avif 400w" sizes="(max-width: 600px) 45vw, 200px">
+<source type="image/webp" srcset="assets/img/region1-240.webp 240w, assets/img/region1-400.webp 400w" sizes="(max-width: 600px) 45vw, 200px">
+<img src="assets/img/region1-400.jpg" width="768" height="1152" alt="First light" loading="lazy" decoding="async">
+</picture>
+<span>01</span>
+<h3>First light</h3>
+</article>
+<article>
+<picture>
+<source type="image/avif" srcset="assets/img/region2-240.avif 240w, assets/img/region2-400.avif 400w" sizes="(max-width: 600px) 45vw, 200px">
+<source type="image/webp" srcset="assets/img/region2-240.webp 240w, assets/img/region2-400.webp 400w" sizes="(max-width: 600px) 45vw, 200px">
+<img src="assets/img/region2-400.jpg" width="768" height="1152" alt="Into the bloom" loading="lazy" decoding="async">
+</picture>
+<span>02</span>
+<h3>Into the bloom</h3>
+</article>
+<article>
+<picture>
+<source type="image/avif" srcset="assets/img/region3-240.avif 240w, assets/img/region3-400.avif 400w" sizes="(max-width: 600px) 45vw, 200px">
+<source type="image/webp" srcset="assets/img/region3-240.webp 240w, assets/img/region3-400.webp 400w" sizes="(max-width: 600px) 45vw, 200px">
+<img src="assets/img/region3-400.jpg" width="768" height="1152" alt="Cloud gardens" loading="lazy" decoding="async">
+</picture>
+<span>03</span>
+<h3>Cloud gardens</h3>
+</article>
+<article>
+<picture>
+<source type="image/avif" srcset="assets/img/region4-240.avif 240w, assets/img/region4-400.avif 400w" sizes="(max-width: 600px) 45vw, 200px">
+<source type="image/webp" srcset="assets/img/region4-240.webp 240w, assets/img/region4-400.webp 400w" sizes="(max-width: 600px) 45vw, 200px">
+<img src="assets/img/region4-400.jpg" width="768" height="1152" alt="Crystal waters" loading="lazy" decoding="async">
+</picture>
+<span>04</span>
+<h3>Crystal waters</h3>
+</article>
+<article>
+<picture>
+<source type="image/avif" srcset="assets/img/region5-240.avif 240w, assets/img/region5-400.avif 400w" sizes="(max-width: 600px) 45vw, 200px">
+<source type="image/webp" srcset="assets/img/region5-240.webp 240w, assets/img/region5-400.webp 400w" sizes="(max-width: 600px) 45vw, 200px">
+<img src="assets/img/region5-400.jpg" width="768" height="1152" alt="Prismatic skies" loading="lazy" decoding="async">
+</picture>
+<span>05</span>
+<h3>Prismatic skies</h3>
+</article>
+<article>
+<picture>
+<source type="image/avif" srcset="assets/img/region6-240.avif 240w, assets/img/region6-400.avif 400w" sizes="(max-width: 600px) 45vw, 200px">
+<source type="image/webp" srcset="assets/img/region6-240.webp 240w, assets/img/region6-400.webp 400w" sizes="(max-width: 600px) 45vw, 200px">
+<img src="assets/img/region6-400.jpg" width="768" height="1152" alt="Chroma symphony" loading="lazy" decoding="async">
+</picture>
+<span>06</span>
+<h3>Chroma symphony</h3>
+</article>
+</div>
+</section>
+<section class="section wrap">
+<div class="heading">
+<div>
+<p class="eyebrow">MAKE TIME FOR A LITTLE PLAY</p>
+<h2>A daily ritual.<br>Or a little rush.</h2>
+</div>
+<p>A monthly painting, an endless challenge<br>and a village full of familiar faces.</p>
+</div>
+<div class="modes" role="region" aria-label="Game modes and screenshots" tabindex="0">
+<article>
+<span class="eyebrow">DAILY PUZZLE</span>
+<h3>Colour a little<br>more each day.</h3>
+<p>Each daily win paints a piece of the monthly picture.</p>
+<picture>
+<source type="image/avif" srcset="assets/img/daily-320.avif 320w, assets/img/daily-480.avif 480w, assets/img/daily-720.avif 720w" sizes="240px">
+<source type="image/webp" srcset="assets/img/daily-320.webp 320w, assets/img/daily-480.webp 480w, assets/img/daily-720.webp 720w" sizes="240px">
+<img src="assets/img/daily-480.png" width="1080" height="2400" alt="The daily puzzle" loading="lazy" decoding="async">
+</picture>
+</article>
+<article>
+<span class="eyebrow">COLOUR RUSH</span>
+<h3>Keep the<br>colours flowing.</h3>
+<p>Mix, clear and chase your own best score in endless play.</p>
+<picture>
+<source type="image/avif" srcset="assets/img/rush-320.avif 320w, assets/img/rush-480.avif 480w, assets/img/rush-720.avif 720w" sizes="240px">
+<source type="image/webp" srcset="assets/img/rush-320.webp 320w, assets/img/rush-480.webp 480w, assets/img/rush-720.webp 720w" sizes="240px">
+<img src="assets/img/rush-480.png" width="1080" height="2400" alt="Colour Rush" loading="lazy" decoding="async">
+</picture>
+</article>
+<article class="pets">
+<span class="eyebrow">YOUR VILLAGE</span>
+<h3>A place<br>to come home to.</h3>
+<p>Rescue friends and hatch jelly pets for your village.</p>
+<picture>
+<source type="image/avif" srcset="assets/img/tinta-192.avif 192w, assets/img/tinta-384.avif 384w" sizes="90px">
+<source type="image/webp" srcset="assets/img/tinta-192.webp 192w, assets/img/tinta-384.webp 384w" sizes="90px">
+<img src="assets/img/tinta-384.jpg" width="384" height="384" alt="Tinta, the apprentice ink-maker" loading="lazy" decoding="async">
+</picture>
+</article>
+</div>
+</section>
+<section class="calm wrap section">
+<div>
+<p class="eyebrow">CALM BY DESIGN</p>
+<h2>A little breathing room.</h2>
+</div>
+<ul>
+<li>No ads in the middle of a level</li>
+<li>Reward videos are always optional</li>
+<li>Calm motion and colour-blind shapes</li>
+<li>Sound and vibration settings</li>
+</ul>
+</section>
+<section class="final wrap">
+<p class="eyebrow">YOUR NEXT COLOUR STORY</p>
+<h2>Bring a little<br>colour home.</h2>
+<a class="button" href="https://play.google.com/store/apps/details?id=com.bleedoku.game&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dlanding" rel="noopener noreferrer">View on Google Play &#8599;</a>
+<p>Android &middot; English &middot; For ages 13+<br>Contains ads &middot; No in-app purchases</p>
+</section>
 </main>
+<footer id="help">
+<div class="wrap">
+<div class="footer-top">
+<div>
+<picture>
+<source type="image/avif" srcset="assets/img/logo-160.avif 160w, assets/img/logo-320.avif 320w" sizes="160px">
+<source type="image/webp" srcset="assets/img/logo-160.webp 160w, assets/img/logo-320.webp 320w" sizes="160px">
+<img src="assets/img/logo-160.png" width="1024" height="576" alt="Bleedoku"  decoding="async">
+</picture>
+<p>Published by Game Studio 05.</p>
+</div>
+<div>
+<b>A question or a little feedback?</b>
+<a href="mailto:usamagames05@gmail.com">usamagames05@gmail.com</a>
+</div>
+<a href="bleedoku/privacy.html">Privacy policy</a>
+</div>
+<div class="copyright">&copy; 2026 Game Studio 05 <span>Bleedoku: Colour Puzzle</span>
+</div>
+</div>
+</footer>
 </body>
 </html>
