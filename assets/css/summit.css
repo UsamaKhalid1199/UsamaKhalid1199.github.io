@@ -1,0 +1,256 @@
+/* Summit Climb pages. Loaded after site.css; re-themes the shared components. */
+.summit {
+  --bg:#fbf7f2;
+  --surface:#f4eade;
+  --card:#fff;
+  --ink:#2a1d14;
+  --muted:#6a5444;
+  --accent:#a8410c;
+  --line:#e5d4c2;
+  --shadow:0 20px 55px #3a1f0c1a
+}
+.summit .button {
+  background:var(--accent);
+  color:#fff
+}
+.summit .button:hover {
+  background:#8a3409
+}
+.summit .button:active {
+  background:#702a07
+}
+.summit .eyebrow {
+  color:var(--accent)
+}
+@media(prefers-color-scheme:dark) {
+  .summit {
+    --bg:#15110e;
+    --surface:#231a14;
+    --card:#2e231b;
+    --ink:#f6ece2;
+    --muted:#cfbeae;
+    --accent:#ffa05a;
+    --line:#4a3a2e;
+    --shadow:none
+  }
+  .summit .button {
+    background:#ffa05a;
+    color:#1f1209
+  }
+  .summit .button:hover {
+    background:#ffb57d
+  }
+  .summit .button:active {
+    background:#f08a3e
+  }
+}
+.sc-brand {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  text-decoration:none;
+  font-weight:900;
+  font-size:19px;
+  letter-spacing:-.02em;
+  line-height:1.1
+}
+.sc-brand picture {
+  display:block;
+  flex:none
+}
+.sc-brand img {
+  width:48px;
+  height:48px;
+  border-radius:12px
+}
+.sc-brand small {
+  display:block;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.08em;
+  color:var(--muted)
+}
+.sc-art {
+  border-radius:28px;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+  background:#2a1a10
+}
+.sc-art picture,.sc-art img {
+  display:block;
+  width:100%
+}
+.sc-art figcaption {
+  font-size:12px;
+  letter-spacing:.06em;
+  padding:12px 20px 14px;
+  color:#f4e3d3;
+  background:#2a1a10;
+  line-height:1.5
+}
+.sc-features {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+  list-style:none;
+  padding:0;
+  margin:0
+}
+.sc-features li {
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:26px 26px 6px
+}
+.sc-features h3 {
+  font-size:22px;
+  letter-spacing:-.02em;
+  margin-bottom:12px
+}
+.sc-features p {
+  font-size:15px
+}
+.sc-features .tag {
+  display:block;
+  font-size:11px;
+  letter-spacing:.15em;
+  font-weight:900;
+  color:var(--accent);
+  margin-bottom:10px
+}
+.sc-shots {
+  display:flex;
+  gap:16px;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  padding:0 0 18px;
+  margin:0;
+  list-style:none;
+  scrollbar-color:var(--accent) var(--surface)
+}
+.sc-shots li {
+  flex:0 0 calc((100% - 32px)/3);
+  scroll-snap-align:start
+}
+.sc-shots img {
+  width:100%;
+  border-radius:14px;
+  border:1px solid var(--line)
+}
+.sc-shots:focus-visible {
+  outline:3px solid var(--accent);
+  outline-offset:5px
+}
+.sc-contact {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:start;
+  border-top:1px solid var(--line);
+  padding:60px 0 70px
+}
+.sc-contact a {
+  color:var(--accent);
+  overflow-wrap:anywhere
+}
+.sc-contact ul {
+  list-style:none;
+  padding:0;
+  margin:0
+}
+.sc-contact li {
+  border-bottom:1px solid var(--line)
+}
+.sc-contact li a {
+  display:flex;
+  align-items:center;
+  min-height:48px;
+  font-weight:800;
+  font-size:16px
+}
+.sc-mail {
+  font-size:20px;
+  font-weight:850
+}
+.sc-steps li {
+  margin-bottom:10px
+}
+.policy .sc-note {
+  border-left:4px solid var(--accent);
+  background:var(--surface);
+  padding:14px 18px;
+  border-radius:0 12px 12px 0
+}
+.footer-links {
+  display:flex;
+  flex-wrap:wrap;
+  gap:0 24px
+}
+@media(max-width:1000px) {
+  .sc-features {
+    grid-template-columns:repeat(2,1fr)
+  }
+  .sc-shots li {
+    flex-basis:45%
+  }
+}
+@media(max-width:600px) {
+  .sc-brand {
+    font-size:16px;
+    gap:10px;
+    min-height:58px
+  }
+  .sc-brand img {
+    width:40px;
+    height:40px;
+    border-radius:10px
+  }
+  .sc-brand small {
+    font-size:10px
+  }
+  .summit .hero h1 {
+    font-size:42px
+  }
+  .sc-art {
+    border-radius:18px
+  }
+  .sc-features {
+    grid-template-columns:1fr;
+    gap:14px
+  }
+  .sc-features li {
+    padding:22px 20px 4px
+  }
+  .sc-shots li {
+    flex-basis:85%
+  }
+  .sc-contact {
+    grid-template-columns:1fr;
+    gap:10px;
+    padding:45px 0 50px
+  }
+  .sc-mail {
+    font-size:17px
+  }
+  .footer-links {
+    display:block
+  }
+}
+@media(max-width:350px) {
+  .sc-brand small {
+    display:none
+  }
+  .summit .hero h1 {
+    font-size:37px
+  }
+}
+@media(forced-colors:active) {
+  .sc-features li,.sc-note {
+    border:1px solid CanvasText
+  }
+}
+@media print {
+  .sc-contact,.sc-shots {
+    display:none!important
+  }
+}
